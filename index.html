@@ -18,6 +18,21 @@
       color:var(--text);line-height:1.45;
       -webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;
     }
+    
+    logo {
+  background: none;    /* прибирає фон з градієнтом */
+  padding: 0;
+  border: none;
+  outline: none;       /* прибирає синю рамку при кліку */
+  box-shadow: none;    /* якщо було підсвічування */
+}
+
+.logo:focus,
+.logo:active {
+  outline: none;
+  border: none;
+  box-shadow: none;
+}
     .avatar-img {
       width: 50px;
       height: 50px;
@@ -235,4 +250,5 @@
   </div>
 </body>
 </html>
+
 
