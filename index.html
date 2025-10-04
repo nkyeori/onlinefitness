@@ -18,6 +18,13 @@
       color:var(--text);line-height:1.45;
       -webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;
     }
+    .avatar-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%; /* кругле фото */
+  object-fit: cover;  /* обрізає по розміру */
+}
+
     a{color:inherit;text-decoration:none}
     .wrap{max-width:var(--container);margin:28px auto;padding:20px}
     header{
@@ -99,8 +106,10 @@
   <div class="wrap">
     <header>
       <div class="brand">
-        <div class="logo">FT</div>
-        <div>
+       <div class="logo">
+  <img src="images/trainer.jpg" alt="Тренер" class="avatar-img">
+       </div>
+
           <h1>Тренер-реабілітолог Тарас Галущак</h1>
           <div style="color:var(--muted);font-size:13px">Онлайн тренування • Харчування • Підтримка</div>
         </div>
@@ -288,5 +297,6 @@
   </div>
 </body>
 </html>
+
 
 
