@@ -19,31 +19,39 @@
       -webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;
     }
     
-    .logo {
-  background: none;    /* прибирає фон з градієнтом */
+  .logo {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: none !important;  /* прибирає фон */
   padding: 0;
-  border: none;
-  outline: none;       /* прибирає синю рамку при кліку */
-  box-shadow: none;    /* якщо було підсвічування */
+  margin: 0;
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;  /* щоб не клікалось */
 }
 
 .logo:focus,
 .logo:active {
-  outline: none;
-  border: none;
-  box-shadow: none;
+  outline: none !important;
+  border: none !important;
+  box-shadow: none !important;
 }
-    .avatar-img {
-      width: 50px;
-      height: 50px;
-      border-radius: 50%; /* кругле фото */
-      object-fit: cover;  /* обрізає по розміру */
-      border: none;        /* прибирає рамку */
-      outline: none;       /* прибирає синю підсвітку при кліку */
-      display: block;      /* робить картинку блоком, щоб не підсвічувалась */
-      user-select: none;   /* не можна виділити */
-      pointer-events: none;
-    }
+
+.avatar-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: none !important;
+  outline: none !important;
+  display: block;
+}
+
     a{color:inherit;text-decoration:none}
     .wrap{max-width:var(--container);margin:28px auto;padding:20px}
     header{
@@ -252,6 +260,7 @@
   </div>
 </body>
 </html>
+
 
 
 
